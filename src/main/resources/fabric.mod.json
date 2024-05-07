@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nomorecosmetics",
+	"version": "${version}",
+	"name": "NoMoreCosmetics",
+	"description": "Cosmetic items for the NoMoreHorses mod.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://ashures.w3spaces.com",
+		"sources": "https://github.com/Ashures/nomorecosmetics-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nomorecosmetics/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ashures.NoMoreCosmetics"
+		],
+		"client": [
+			"com.ashures.NoMoreCosmeticsClient"
+		],
+		"fabric-datagen": [
+			"com.ashures.NoMoreCosmeticsDataGenerator"
+		]
+	},
+	"mixins": [
+		"lethality.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
